@@ -137,6 +137,23 @@ bot.on("message", async message => {
     return message.channel.send(botembed);
   }
 
+if(cmd === `${prefix}commands`){
+
+    let bicon = bot.user.displayAvatarURL;
+    let botembed = new Discord.RichEmbed()
+    .setDescription("Bot Commands")
+    .setColor("#15f153")
+    .setThumbnail(bicon)
+    .addField("Bot Name", bot.user.username)
+    .addField("*serverinfo", " ")
+    .addField("*botinfo", " ")
+    .addField("*ban", "[Pentru Admini]")
+    .addField("*kick", "[Pentru Admini]")
+    .addField("*report", " ");
+
+    return message.channel.send(botembed);
+  }
+
 });
 
 bot.login(tokenfile.token);
