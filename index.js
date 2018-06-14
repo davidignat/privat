@@ -133,7 +133,7 @@ bot.on("message", async message => {
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
     .addField("Created On", bot.user.createdAt)
-    .addField("serverinfo", " ")
+    .addField("serverinfo")
     .addField("botinfo")
     .addField("ban", "[Pentru Admini]")
     .addField("kick", "[Pentru Admini]")
