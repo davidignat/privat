@@ -133,7 +133,6 @@ bot.on("message", async message => {
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
     .addField("Created On", bot.user.createdAt)
-    .addField("Bot Name", bot.user.username)
     .addField("*serverinfo", " ")
     .addField("*botinfo", " ")
     .addField("*ban", "[Pentru Admini]")
@@ -143,9 +142,6 @@ bot.on("message", async message => {
 
     return message.channel.send(botembed);
 
-  }
-
-    return message.channel.send(botembed);
   }
 
 });
