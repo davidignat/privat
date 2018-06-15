@@ -133,11 +133,12 @@ bot.on("message", async message => {
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
     .addField("Created On", bot.user.createdAt)
-    .addField("serverinfo")
-    .addField("botinfo")
+    .addField("Comenzi:", bot.user,username)
+    .addField("serverinfo", "[Pentru membri]")
+    .addField("botinfo", "[Pentru membri]")
     .addField("ban", "[Pentru Admini]")
     .addField("kick", "[Pentru Admini]")
-    .addField("*report", bot.user.username);
+    .addField("*report", "[Pentru membri]");
 
     return message.channel.send(botembed);
   }
