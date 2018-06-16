@@ -134,11 +134,11 @@ bot.on("message", async message => {
     .addField("Bot Name", bot.user.username)
     .addField("Created On", bot.user.createdAt)
     .addField("Comenzi:", bot.user,username)
-    .addField("serverinfo", "[Pentru membri]")
-    .addField("botinfo", "[Pentru membri]")
-    .addField("ban", "[Pentru Admini]")
-    .addField("kick", "[Pentru Admini]")
-    .addField("*report", "[Pentru membri]");
+    .addField("*serverinfo")
+    .addField("*botinfo")
+    .addField("*ban")
+    .addField("*kick")
+    .addField("*report");
 
     return message.channel.send(botembed);
   }
