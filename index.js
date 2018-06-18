@@ -132,13 +132,7 @@ bot.on("message", async message => {
     .setColor("#15f153")
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
-    .addField("Created On", bot.user.createdAt)
-    .addField("Comenzi:", bot.user,username)
-    .addField("*serverinfo")
-    .addField("*botinfo")
-    .addField("*ban")
-    .addField("*kick")
-    .addField("*report");
+    .addField("Created On", bot.user.createdAt);
 
     return message.channel.send(botembed);
   }
